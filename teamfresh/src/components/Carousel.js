@@ -90,8 +90,6 @@ const Carousel = ({slides}) => {
             })
         }
 
-    console.log(current);
-    console.log(getWidth());
 
     return (
         <CarouselContainer>
@@ -100,7 +98,7 @@ const Carousel = ({slides}) => {
                         <CarouselImageContainer width={curwidth*length} translate={translate}>
                 {slides.map((slide,index) => {
                     return (
-                            <CarouselImageTextContainer>
+                            <CarouselImageTextContainer key={index}>
                             <CarouselImage src={slide.image} alt="Carousel images"     width={curwidth}/>
                                     <CarouselContentTextContainer>
                                         <CarouselContentTextTitle>

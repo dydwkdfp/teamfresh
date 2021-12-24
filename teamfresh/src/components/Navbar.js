@@ -15,33 +15,33 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='home' smooth={true} duration={500} spy={true}>Jaemin</NavLogo>
+                    <NavLogo to='/'>Jaemin</NavLogo>
                         <NavPhoneMenu>
                             <AiOutlineMenu className='menuicon' size={'30px'}/>
                         </NavPhoneMenu>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="empty" smooth={true} duration={500} spy={true}>
+                            <NavLinks to="empty">
                                 회사소개
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="empty" smooth={true} duration={500} spy={true}>
+                            <NavLinks to="empty">
                                 사업소개
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="empty" smooth={true} duration={500} spy={true}>
+                            <NavLinks to="empty">
                                 공지사항
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="empty" smooth={true} duration={500} spy={true}>
+                            <NavLinks to="empty">
                                 보도자료
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="early" smooth={true} duration={500} spy={true}>
+                            <NavLinks to="Delivery">
                                 새벽배송
                             </NavLinks>
                         </NavItem>
