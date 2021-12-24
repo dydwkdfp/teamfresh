@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.plus {
+  margin:0 0 0 10px;
+
+}
+
+.plus:hover{
+  cursor:pointer;
+}
+
+.history{
+  margin:0 8px 0 0;
+}
+.facebookl{
+  margin:20px 20px 20px 20px;
+  color:#3B5998;
+}
+.facebookl:hover{
+  color:#9BB9F8;
+}
+.youtubel{
+  margin:20px 20px 20px 20px;
+  color:#BB0000;
+}
+.youtubel:hover{
+  color:#FF6060
+}

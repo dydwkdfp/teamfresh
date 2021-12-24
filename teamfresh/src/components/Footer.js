@@ -29,6 +29,9 @@ const Footer = () => {
                         </FooterTitle>
                         <Footerhr/>
                         <FooterContent>
+                        Tel: 02-423-0525
+                        </FooterContent>
+                        <FooterContent>
                             Fax: 02-3432-0525
                         </FooterContent>
                         <FooterContent>
