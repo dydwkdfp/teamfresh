@@ -1,8 +1,8 @@
 import React from 'react'
-import { Displayhr, NoticeBoardContainer, NoticeBoardContentDate, NoticeBoardContenthr, NoticeBoardContentPlus, NoticeBoardContentTextWrapper, NoticeBoardContentText, NoticeBoardContentTextContainer, NoticeBoardContentTitle, NoticeBoardContentWrapper, NoticeBoardTitle, NoticeBoardTitleContainer, NoticeBoardWrapper, NoticeContainer, NoticeWrapper, NoticeBoardContentTextDivider, NoticeSNSContainer, NoticeSNSTitle, NoticeSNSLinkContainer } from '../styles/NoticeStyle'
+import { Displayhr, NoticeBoardContainer, NoticeBoardContentDate, NoticeBoardContenthr, NoticeBoardContentTextWrapper, NoticeBoardContentText, NoticeBoardContentTextContainer, NoticeBoardContentTitle, NoticeBoardContentWrapper, NoticeBoardTitle, NoticeBoardTitleContainer, NoticeBoardWrapper, NoticeContainer, NoticeWrapper, NoticeBoardContentTextDivider, NoticeSNSContainer, NoticeSNSTitle, NoticeSNSLinkContainer } from '../styles/NoticeStyle'
 import {HiPlus} from 'react-icons/hi';
 import {FaRegClock} from 'react-icons/fa';
-import {BsFacebook, BsYoutube} from 'react-icons/bs';
+import {BsYoutube} from 'react-icons/bs';
 import {GrFacebook} from 'react-icons/gr';
 const ContentNotice = () => {
     return (

@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const NoticeContainer = styled.div`
     width:100%;
-    height: 700px;
 `
 
 export const NoticeWrapper = styled.div`
@@ -18,6 +17,10 @@ export const NoticeBoardContainer = styled.div`
     justify-content:center;
     align-items:flex;
     margin:20px 40px 70px 40px;
+
+    @media screen and (max-width:980px){
+        flex-direction:column;
+    }
 `
 export const NoticeBoardWrapper = styled.div`
     width:100%;
@@ -40,9 +43,6 @@ export const NoticeBoardContentTitle = styled.p`
     font-size:18px;
     font-weight:600;
 
-`
-export const NoticeBoardContentPlus = styled.button`
-    margin:20px;
 `
 export const NoticeBoardContenthr = styled.hr`
     border:none;
@@ -112,4 +112,5 @@ export const NoticeSNSLinkContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    padding:0 0 50px 0;
 `

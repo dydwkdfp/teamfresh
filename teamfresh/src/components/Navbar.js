@@ -4,7 +4,10 @@ import {Nav,
     NavLogo,
     NavMenu,
     NavItem,
-    NavLinks} from '../styles/NavbarStyle.js';
+    NavLinks,
+    NavPhoneMenu} from '../styles/NavbarStyle.js';
+
+import {AiOutlineMenu} from 'react-icons/ai';
 
 const Navbar = () => {
 
@@ -13,6 +16,9 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='home' smooth={true} duration={500} spy={true}>Jaemin</NavLogo>
+                        <NavPhoneMenu>
+                            <AiOutlineMenu className='menuicon' size={'30px'}/>
+                        </NavPhoneMenu>
                     <NavMenu>
                         <NavItem>
                             <NavLinks to="empty" smooth={true} duration={500} spy={true}>

@@ -52,6 +52,7 @@
 .facebookl{
   margin:20px 20px 20px 20px;
   color:#3B5998;
+
 }
 .facebookl:hover{
   color:#9BB9F8;
@@ -59,6 +60,7 @@
 .youtubel{
   margin:20px 20px 20px 20px;
   color:#BB0000;
+
 }
 .youtubel:hover{
   color:#FF6060
@@ -69,3 +71,22 @@
 .barrow{
   color:#BBBBBB;
 }
+.farrowcontainer:hover .farrow{
+  color:#EEEEEE;
+}
+.barrowcontainer:hover .barrow{
+  color:#EEEEEE;
+}
+.menuicon{
+  color:#81858E;
+  height:30px;
+  border:1px solid #D1D5DE;
+  border-radius: 5px;
+  padding:5px 15px;
+}
+.menuicon:hover {
+  cursor:pointer;
+}
+
+@media screen and (max-width: 780px) { body .youtubel{ height:40px; } }
+@media screen and (max-width: 780px) { body .facebookl{ height:40px; } }

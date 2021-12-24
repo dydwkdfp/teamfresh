@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const DisplayContainer = styled.div`
     width:100%;
-    height:770px;
     display:flex;
     justify-content:center;
     align-item:center;
@@ -45,10 +44,14 @@ export const DisplayContentContainer = styled.div`
     width:100%;
     margin-top:50px;
     margin-bottom:70px;
+    
+    @media screen and (max-width:780px){
+        flex-direction:column;
+    }
 `
 export const DisplayContentWrapper = styled.div`
-    width:100%;
-    padding:20px;
+    width:90%;
+    margin:20px;
 `
 export const DisplayContentImageContainer = styled.div`
     width:100%;
