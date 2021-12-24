@@ -3,7 +3,7 @@ import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
     background: #F8F9FA;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -44,6 +44,10 @@ export const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: 20px;
+    @media screen and (max-width:980px){
+        display:none;
+    }
+
 `
 
 export const NavItem = styled.li`
@@ -66,8 +70,12 @@ export const NavLinks = styled(LinkS)`
     }
 `
 
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-    
+export const NavPhoneMenu = styled.div`
+display:none;
+align-items:center;
+
+
+@media screen and (max-width:980px){
+    display:flex;
+}
 `
