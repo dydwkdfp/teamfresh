@@ -36,6 +36,8 @@ export const NavLogo = styled(Link)`
     margin-left:10px;
     font-weight: bold;
     text-decoration:none;
+
+    
 `;
 
 
@@ -50,9 +52,44 @@ export const NavMenu = styled.ul`
     }
 
 `
+export const NavMenuItem = styled.div`
+    position:absolute;
+    top:50px;
+    display:none;
+    align-items:center;
+    justify-content:flex;
+    background:#EFF0F1;
+    width:170px;
 
+    &:hover{
+        display:flex;
+    }
+
+    box-shadow:0 2px 10px 5px #F5F5F5;
+`
+
+export const NavMenuItemul = styled.ul`
+list-style: none;
+margin: 0 0 0 20px;
+padding :0px;
+text-align:flex;
+`
+export const NavMenuItemli = styled.li`
+margin-top:20px;
+margin-bottom:20px;
+display:flex;
+
+&:hover {
+    cursor: pointer;
+}
+`
 export const NavItem = styled.li`
     height: 50px;
+    position:relative;
+
+    &:hover ${NavMenuItem}{
+        display:flex;
+    }
 `
 
 export const NavLinks = styled(Link)`
@@ -60,7 +97,7 @@ export const NavLinks = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:11px;
+    font-size:14px;
     text-decoration: none;
     padding: 0 15px;
     height: 100%;
@@ -78,5 +115,39 @@ align-items:center;
 
 @media screen and (max-width:980px){
     display:flex;
+}
+`
+export const NavPhoneMenuContainer = styled.div`
+    display:${props=>props.active === 1 ? 'flex' : 'none'};
+`
+
+
+export const NavMenuMobileItem = styled.div`
+    position:absolute;
+    top:50px;
+    display:none;
+    align-items:center;
+    justify-content:space-evenly;
+    background:#EFF0F1;
+    width:150%;
+
+    &:hover{
+        display:flex;
+    }
+
+    box-shadow:0 2px 10px 5px #F5F5F5;
+`
+
+export const NavMenuMobileItemul = styled.ul`
+list-style: none;
+margin: 0px;
+padding :0px;
+`
+export const NavMenuMobileItemli = styled.li`
+margin-top:20px;
+margin-bottom:20px;
+
+&:hover {
+    cursor: pointer;
 }
 `

@@ -5,7 +5,10 @@ import {Nav,
     NavMenu,
     NavItem,
     NavLinks,
-    NavPhoneMenu} from '../styles/NavbarStyle.js';
+    NavPhoneMenu,
+    NavMenuItemli,
+    NavMenuItem,
+    NavMenuItemul} from '../styles/NavbarStyle.js';
 
 import {AiOutlineMenu} from 'react-icons/ai';
 
@@ -21,16 +24,61 @@ const Navbar = () => {
                         </NavPhoneMenu>
                     <NavMenu>
                         <NavItem>
+                            <NavMenuItem>
+                                <NavMenuItemul>
+                                    <NavMenuItemli>
+                                        회사소개
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        협력사 소개
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        고객사 소개
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        오시는 길
+                                    </NavMenuItemli>
+                                </NavMenuItemul>
+                            </NavMenuItem>
                             <NavLinks to="empty">
                                 회사소개
                             </NavLinks>
                         </NavItem>
                         <NavItem>
+                            <NavMenuItem>
+                                <NavMenuItemul>
+                                    <NavMenuItemli>
+                                        새벽배송
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        화물주선
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        풀필먼트
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        그로서리
+                                    </NavMenuItemli>
+                                </NavMenuItemul>
+                            </NavMenuItem>
                             <NavLinks to="empty">
                                 사업소개
                             </NavLinks>
                         </NavItem>
                         <NavItem>
+                            <NavMenuItem>
+                                <NavMenuItemul>
+                                    <NavMenuItemli>
+                                        공지사항
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        인턴채용
+                                    </NavMenuItemli>
+                                    <NavMenuItemli>
+                                        서비스 소개
+                                    </NavMenuItemli>
+                                </NavMenuItemul>
+                            </NavMenuItem>
                             <NavLinks to="empty">
                                 공지사항
                             </NavLinks>
