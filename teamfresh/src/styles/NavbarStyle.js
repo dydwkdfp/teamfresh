@@ -65,7 +65,7 @@ export const NavMenuItem = styled.div`
         display:flex;
     }
 
-    box-shadow:0 2px 10px 5px #F5F5F5;
+    box-shadow:0 5px 10px 1px #858585;
 `
 
 export const NavMenuItemul = styled.ul`
@@ -119,13 +119,19 @@ align-items:center;
 `
 export const NavPhoneMenuContainer = styled.div`
     display:${props=>props.active === 1 ? 'flex' : 'none'};
+    position:absolute;
+    left:0%;
+    top:60px;
+    background: #F8F9FA;
+    width:100vw;
+
 `
 
 
 export const NavMenuMobileItem = styled.div`
-    position:absolute;
     top:50px;
     display:none;
+    position:absolute;
     align-items:center;
     justify-content:space-evenly;
     background:#EFF0F1;
@@ -140,12 +146,14 @@ export const NavMenuMobileItem = styled.div`
 
 export const NavMenuMobileItemul = styled.ul`
 list-style: none;
-margin: 0px;
+margin: 10px 40px 10px 40px;
 padding :0px;
 `
+
 export const NavMenuMobileItemli = styled.li`
 margin-top:20px;
 margin-bottom:20px;
+color:#666666;
 
 &:hover {
     cursor: pointer;

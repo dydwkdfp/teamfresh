@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState,React} from 'react';
 import {Nav,
     NavbarContainer,
     NavLogo,
@@ -8,11 +8,21 @@ import {Nav,
     NavPhoneMenu,
     NavMenuItemli,
     NavMenuItem,
-    NavMenuItemul} from '../styles/NavbarStyle.js';
+    NavMenuItemul,
+    NavPhoneMenuContainer,
+    NavMenuMobileItem,
+    NavMenuMobileItemli,
+    NavMenuMobileItemul} from '../styles/NavbarStyle.js';
 
 import {AiOutlineMenu} from 'react-icons/ai';
 
 const Navbar = () => {
+    const [mobilemenu, setMobilemenu] = useState(0);
+
+
+    const openMenu = () =>{
+        mobilemenu===0?setMobilemenu(1):setMobilemenu(0);
+    }
 
     return (
         <>
@@ -20,7 +30,23 @@ const Navbar = () => {
                 <NavbarContainer>
                     <NavLogo to='/'>Jaemin</NavLogo>
                         <NavPhoneMenu>
-                            <AiOutlineMenu className='menuicon' size={'30px'}/>
+                            <AiOutlineMenu className='menuicon' size={'30px'} onClick={openMenu}/>
+                            <NavPhoneMenuContainer active={mobilemenu}>
+                                    <NavMenuMobileItemul>
+                                        <NavMenuMobileItemli>
+                                            회사소개
+                                        </NavMenuMobileItemli>
+                                        <NavMenuMobileItemli>
+                                            사업소개
+                                        </NavMenuMobileItemli>
+                                        <NavMenuMobileItemli>
+                                            공지사항
+                                        </NavMenuMobileItemli>
+                                        <NavMenuMobileItemli>
+                                            보도자료
+                                        </NavMenuMobileItemli>
+                                    </NavMenuMobileItemul>
+                            </NavPhoneMenuContainer>
                         </NavPhoneMenu>
                     <NavMenu>
                         <NavItem>
