@@ -129,19 +129,16 @@ export const NavPhoneMenuContainer = styled.div`
 
 
 export const NavMenuMobileItem = styled.div`
-    top:50px;
     display:none;
-    position:absolute;
-    align-items:center;
-    justify-content:space-evenly;
+    align-items:flex;
     background:#EFF0F1;
-    width:150%;
+    width:85vw;
 
     &:hover{
         display:flex;
     }
 
-    box-shadow:0 2px 10px 5px #F5F5F5;
+    box-shadow:0 2px 10px 5px #D5D5D5;
 `
 
 export const NavMenuMobileItemul = styled.ul`
@@ -158,4 +155,30 @@ color:#666666;
 &:hover {
     cursor: pointer;
 }
+&:hover ${NavMenuMobileItem}{
+    display:flex;
+}
+`
+export const NavMenuMobileItemText = styled.p`
+    font-size:12px;
+    color:#666666;
+`
+
+export const NavMenuMobileItemlitwo = styled.li`
+padding:10px 20px 10px 20px;
+color:#666666;
+
+&:hover {
+    cursor: pointer;
+    background:#DDDDDD;
+    font-weight:600;
+}
+`
+
+export const NavMenuMobileItemultwo = styled.ul`
+list-style: none;
+margin: 10px 0 10px 0;
+width:100%;
+padding:0;
+
 `

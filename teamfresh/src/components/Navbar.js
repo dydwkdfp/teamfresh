@@ -12,7 +12,10 @@ import {Nav,
     NavPhoneMenuContainer,
     NavMenuMobileItem,
     NavMenuMobileItemli,
-    NavMenuMobileItemul} from '../styles/NavbarStyle.js';
+    NavMenuMobileItemul,
+    NavMenuMobileItemText,
+    NavMenuMobileItemlitwo,
+    NavMenuMobileItemultwo} from '../styles/NavbarStyle.js';
 
 import {AiOutlineMenu} from 'react-icons/ai';
 
@@ -34,16 +37,69 @@ const Navbar = () => {
                             <NavPhoneMenuContainer active={mobilemenu}>
                                     <NavMenuMobileItemul>
                                         <NavMenuMobileItemli>
+                                            <NavMenuMobileItemText>
                                             회사소개
+                                            </NavMenuMobileItemText>
+                                            <NavMenuMobileItem>
+                                                <NavMenuMobileItemultwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        회사소개
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        협력사 소개
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        고객사 소개
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        오시는 길
+                                                    </NavMenuMobileItemlitwo>
+                                                </NavMenuMobileItemultwo>
+                                            </NavMenuMobileItem>
                                         </NavMenuMobileItemli>
                                         <NavMenuMobileItemli>
+                                            <NavMenuMobileItemText>
                                             사업소개
+                                            </NavMenuMobileItemText>
+                                            <NavMenuMobileItem>
+                                                <NavMenuMobileItemultwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        새벽배송
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        화물주선
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        풀필먼트
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        그로서리
+                                                    </NavMenuMobileItemlitwo>
+                                                </NavMenuMobileItemultwo>
+                                            </NavMenuMobileItem>
                                         </NavMenuMobileItemli>
                                         <NavMenuMobileItemli>
+                                            <NavMenuMobileItemText>
                                             공지사항
+                                            </NavMenuMobileItemText>
+                                            <NavMenuMobileItem>
+                                                <NavMenuMobileItemultwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        공지사항
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        인턴채용
+                                                    </NavMenuMobileItemlitwo>
+                                                    <NavMenuMobileItemlitwo>
+                                                        서비스 소개
+                                                    </NavMenuMobileItemlitwo>
+                                                </NavMenuMobileItemultwo>
+                                            </NavMenuMobileItem>
                                         </NavMenuMobileItemli>
                                         <NavMenuMobileItemli>
+                                            <NavMenuMobileItemText>
                                             보도자료
+                                            </NavMenuMobileItemText>
                                         </NavMenuMobileItemli>
                                     </NavMenuMobileItemul>
                             </NavPhoneMenuContainer>
